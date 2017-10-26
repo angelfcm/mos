@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Objeto Semántico - Glosswaiter</title>
+    <link rel="stylesheet" href="mos.css" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Example -->
+    <section id="example">
+        <h2>Objeto Ejemplo</h2>
+
+        <div class="object">
+            <header><h2>Nombre Objeto</h2></header>
+            <ul>
+                <li class="primary">id objeto</li>
+                <li>atributo 1</li>
+                <li>atributo 2</li>
+                <li class="instance">Instancia 1<i>1, 1</i></li>
+                <li class="instance">Instancia 2<i>1, 1</i></li>
+                <li class="group">
+                    <header><h3>grupo multivalor</h3></header>
+                    <ul>
+                        <li class="instance primary">Instancia Primaria<i>0, N</i></li>
+                        <li class="primary">id multivalor</li>
+                        <li>atributo</li>
+                        <li class="instance">Instancia <i>1, ST</i></li>
+                        <li class="group">
+                            <header><h3>subgrupo</h3></header>
+                            <ul>
+                                <li class="instance primary">Instancia</li>
+                                <li>subatributo 1</li>
+                                <li>subatributo 2</li>
+                            </ul>
+                            <i>0, 1, 1</i>
+                        </li>
+                    </ul>
+                    <i>1, 1, 1</i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="object">
+            <header><h2>Nombre</h2></header>
+            <ul>
+                <li class="primary">id</li>
+                <li>atributo</li>
+            </ul>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MOS 
+   v1.0 | 25.10.2017
+   Angel Carriola
+*/
+
+.object
+{
+    margin: 5px;
+    padding: 5px 8px;
+    border: 1px solid #222;
+    box-shadow: 1px 1px 10px #222;
+    border-radius: 2px;
+    font-family: monospace;
+    font-size: 110%;
+    float: left;
+}
+
+.object > header
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.object .attributes
+{
+    margin-bottom: 10px;
+}
+
+.object ul li 
+{
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.object .attributes li:first-child::before, .object .primary::before
+{
+    content: 'ID';
+    position: absolute;
+    left: 0;
+    margin-left: -25px;
+    margin-top: 2px;
+    border-bottom: 4px double #000;
+    font-size: 65%;
+}
+
+.object .instance.primary::before
+{
+    margin-left: -26px;
+}
+
+.object .instances
+{
+    margin-bottom: 10px;
+}
+
+
+.object .instances li, .object .instance
+{
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 3px 6px;
+    background: #eee;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.object .instances li i, .object .instance i
+{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    margin-left: 4px;
+    min-width: 40px;
+    font-size: 65%;
+    text-align: left;
+}
+
+.object .group
+{
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.object .group .group
+{
+    margin-top: 10px;
+}
+
+.object .group > ul
+{
+    border: 1px solid #000;
+    border-left: none;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+}
+
+.object .group > header
+{
+    background: #fff;
+    position: relative;
+    bottom: -3px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.object .group > i
+{
+    background: #fff;
+    position: relative;
+    bottom: 5px;
+    margin-right: 10px;
+    padding-right: 5px;
+    display: block;
+    text-align: right;
+    font-size: 65%;
+}
